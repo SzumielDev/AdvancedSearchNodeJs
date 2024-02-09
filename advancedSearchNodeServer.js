@@ -21,7 +21,7 @@ connection.connect(function (err) {
 
 //Endpoint for getting car offers
 //You can choose what filter you want to use, what page you want to get and how many offers you want to get on one page
-//Also you can choose beetwen sorting by price, date, mileage, year and power
+//Also you can choose beetwen sorting by price, date, mileage, year, power and more...
 
 //The most important part of this endpoint is the query, where you can use all filters and sorting and you get only 10 offers on one request
 
