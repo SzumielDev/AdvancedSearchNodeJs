@@ -22,6 +22,9 @@ connection.connect(function (err) {
 //Endpoint for getting car offers
 //You can choose what filter you want to use, what page you want to get and how many offers you want to get on one page
 //Also you can choose beetwen sorting by price, date, mileage, year and power
+
+//The most important part of this endpoint is the query, where you can use all filters and sorting and you get only 10 offers on one request
+
 app.get('/offers/search/:page', (req, res) => {
     const { page } = req.params;
 
@@ -31,7 +34,7 @@ app.get('/offers/search/:page', (req, res) => {
         yearFrom, yearTo, priceFrom, priceTo, mileageFrom, mileageTo, horsepowerFrom, horsepowerTo, engineFrom, engineTo,
         sort
     } = req.query;
-    const pageSize = 2;
+    const pageSize = 10; //Size of one response
     const status = 3;
 
     const offset = (page - 1) * pageSize;
