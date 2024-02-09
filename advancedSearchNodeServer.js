@@ -176,4 +176,57 @@ app.get('/offers/search/:page', (req, res) => {
     });
 })
 
+//offers/search/:page from this enpoint you can get offers with filters and sorting
+//This is example of response from this endpoint
+
+// [
+//     {
+//         "id": 1,
+//         "user_id": 1,
+//         "created_at": "2024-02-07T23:01:12.000Z",
+//         "activated_at": null,
+//         "expire_at": "2024-03-08T23:01:12.000Z",
+//         "current_status": 3,
+//         "views": 0,
+//         "clicks": 0,
+//         "nickname": "Andrzej",
+//         "phone_number": "333444555",
+//         "localization": 1,
+//         "brand": 2,
+//         "model": 3,
+//         "production_year": 2010,
+//         "fuel": "petrol",
+//         "gearbox": "manual",
+//         "mileage": 123123,
+//         "body": "coupe",
+//         "seller_status": 0,
+//         "contract": 0,
+//         "is_registered": 0,
+//         "is_accident_free": 1,
+//         "is_damaged": 1,
+//         "country": 10,
+//         "is_used": 1,
+//         "price_negotiable": 0,
+//         "price": 123321,
+//         "car_description": "XYZ",
+//         "profile_image": "1-1707346872276-610513888.jpg",
+//         "image": {
+//             "image1": "image1.jpg",
+//             "image2": "image2.jpg"
+//         },
+//         "vin": "AAA1223",
+//         "engine_velocity": 2000,
+//         "horsepower": 123,
+//         "drive": "fwd",
+//         "doors": "3",
+//         "color": "white",
+//         "registration_number": "XYZ75643",
+//         "first_registration": "2007-03-01T23:00:00.000Z",
+//         "equipment": {
+//             "eq": "Radio",
+//             "eq2": "ABS"
+//         }
+//     }
+// ]
+
 
