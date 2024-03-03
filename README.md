@@ -2,6 +2,6 @@ During the development of advanced search filters, I have created a system that 
 The example below clearly demonstrates that when a model is selected in the filters, it should not remain active when the brand changes or ceases to exist.
 
 <div align="center">
-        <img align="center" width="350" src="/avatar.gif" alt="Filter search gif" />
+        <img align="center" width="600" src="/avatar.gif" alt="Filter search gif" />
 </div>
 
